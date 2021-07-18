@@ -33,6 +33,8 @@ export default function HeroSection() {
     return () => clearInterval(timer)
   })
 
+
+
   return (<>
     <div className="page">
       {photos.filter((photo, index) => slider === index).map((photo, index) =>
@@ -49,6 +51,21 @@ export default function HeroSection() {
       <h1 className="hero-section-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
       <p className="hero-section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <a className="price-button" href="/pricing" data-text="See Pricing">See Pricing</a>
+      <nav className="hamburger" role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="/home"><li>Home</li></a>
+            <a href="/red"><li>Red</li></a>
+            <a href="/perks"><li>Perks</li></a>
+            <a href="/reviews"><li>Reviews</li></a>
+            <a href="/yellow"><li>Yellow</li></a>
+          </ul>
+        </div>
+      </nav>
     </div>
   </>
   )
