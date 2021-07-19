@@ -1,0 +1,218 @@
+$yellow-primary: #feb33f;
+.yellow-page{
+  background-color:$yellow-primary;
+  height: 90vh;
+}
+body{
+  width:100vw;
+  overflow-x: hidden;
+}
+
+.hamburger-yellow {
+  position: absolute;
+  top: 184.2vh;
+  left: 20px;
+}
+
+#menuToggle-yellow {
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  
+  z-index: 10;
+  
+  -webkit-user-select: none;
+  user-select: none;
+  a {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+    &:hover{
+  color: $yellow-primary;
+    }
+  }
+  input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 11; /* ensure it is on the top*/
+  
+  -webkit-touch-callout: none;
+  }
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 100%;
+    
+    background: white;
+    border-radius: 3px;
+    
+    z-index: 10;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    &:first-child {
+      transform-origin: 0% 0%;
+    }
+    &:nth-last-child(2){
+  transform-origin: 0% 100%;
+
+    }
+  }
+}
+
+/*transform the hamburger into a cross*/
+#menuToggle-yellow input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*cause one of the slices to be hidden*/
+#menuToggle-yellow input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*one line should face the other way*/
+#menuToggle-yellow input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu-yellow
+{
+  position: absolute;
+  width: 250px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  border-radius: 0px 0px 250px 0px;
+  
+  background: linear-gradient(to right,aqua, green);
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+}
+
+
+/* menu slide in from left*/
+#menuToggle-yellow input:checked ~ ul
+{
+  transform: none;
+}
+
+.logo-yellow{
+  color:white;
+  font-size: 2em;
+  position: absolute;
+  left: 80px;
+  top: -9px;
+  z-index: 11;
+}
+
+.button-yellow {
+  outline:0;
+  background: white;
+  border-radius: 50px;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: $yellow-primary;
+  font-weight: bold;
+  letter-spacing: 4px;
+  overflow: hidden;
+  position: absolute;
+  padding: 2em 3em;
+  margin: 4em;
+  text-decoration: none;
+  text-transform: uppercase;
+ &:hover {
+  background: linear-gradient(to right, blue, aqua);
+ }
+}
+.try-yellow {
+  left: 80vw;
+}
+.demo-yellow {
+  left: 50vw;
+  margin-top: 60vh;
+  font-size: 1.5em;
+}
+
+
+.cloud{
+  overflow: hidden;
+  margin-top: 25vw;
+  left: 85vw;
+  position: absolute;
+  border-radius: 100%;
+  height: 40vh;
+  width: 40vh;
+
+}
+
+.cup{
+  background-color: $yellow-primary;
+  left: 15vw;
+  margin-top: 15vh;
+  position: absolute;
+  height: 70vh;
+  width: 60vh;
+  z-index: 1;
+  mask-size: 100vmin;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.overlay{
+  position: absolute;
+  left:11vw;
+  margin-top: 7vh;
+  height: 80vh;
+  z-index: 5;
+  &:hover{
+    transform: scale(1.03)
+  }
+}
+
+.yellow-title {
+  position: absolute;
+padding: 30vh 0 0 50vw;
+font-size: 4em;
+color: white;
+z-index: 10;
+font-family: 'Roboto', sans-serif;
+
+}
+
+.yellow-text{
+position: absolute;
+padding: 45vh 0 0 50vw;
+font-size: 2em;
+z-index: 10;
+font-family: 'Roboto', sans-serif;
+}
