@@ -20,7 +20,7 @@ export default function Reviews() {
         <p className="review-text" id="review-three">"Love it, it's the Best. I can't live without it!"</p>
       </div>
       <nav className="hamburger-reviews" role="navigation">
-        <p className="logo-reviews">EXP|CON</p>
+        <p className="logo-reviews">EXP│CON</p>
         <div id="menuToggle-reviews">
           <input type="checkbox" />
           <span></span>

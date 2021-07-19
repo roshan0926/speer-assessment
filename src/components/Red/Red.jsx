@@ -15,7 +15,7 @@ export default function Red() {
       <p className="red-text">Experience live version of your favorite songs.</p>
       <img className="speakers" src={speakers} alt="speakers" />
       <nav className="hamburger-red" role="navigation">
-        <p className="logo-red">EXP|CON</p>
+        <p className="logo-red">EXP│CON</p>
         <div id="menuToggle-red">
           <input type="checkbox" />
           <span></span>

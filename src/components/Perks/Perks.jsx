@@ -16,7 +16,7 @@ export default function Perks() {
     <h2 className="perk-subtitle" id="yellow">subscription payment model</h2>
     <p className="description" id="desc-three">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
     <nav className="hamburger-perks" role="navigation">
-          <p className="logo-perks">EXP|CON</p>
+          <p className="logo-perks">EXP│CON</p>
         <div id="menuToggle-perks">
           <input type="checkbox" />
           <span></span>

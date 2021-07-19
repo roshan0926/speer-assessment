@@ -23,7 +23,7 @@ export default function Yellow() {
     <img className="cloud" src={cloud} alt="cloud"/>
     <div className="bottom-foreground"></div>
       <nav className="hamburger-yellow" role="navigation">
-        <p className="logo-yellow">EXP|CON</p>
+        <p className="logo-yellow">EXP│CON</p>
         <div id="menuToggle-yellow">
           <input type="checkbox" />
           <span></span>
