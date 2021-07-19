@@ -9,6 +9,7 @@ import Reviews from './components/Reviews/Reviews';
 import GetExpCon from './components/GetExpCon/GetExpCon';
 import Pricing from './components/Pricing/Pricing';
 import Payments from './components/Payments/Payments';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   return (
@@ -25,12 +26,15 @@ export default function App() {
             <Perks />
             <Reviews />
             <GetExpCon />
+            <Footer />
           </Route>
           <Route exact path="/pricing">
             <Pricing />
+            <Footer />
           </Route>
           <Route exact path="/payments">
             <Payments />
+            <Footer />
           </Route>
         </Switch>
       </Router>
