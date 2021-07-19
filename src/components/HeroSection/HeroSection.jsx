@@ -52,6 +52,7 @@ export default function HeroSection() {
       <p className="hero-section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <a className="price-button" href="/pricing" data-text="See Pricing">See Pricing</a>
       <nav className="hamburger" role="navigation">
+          <p className="logo">EXP|CON</p>
         <div id="menuToggle">
           <input type="checkbox" />
           <span></span>

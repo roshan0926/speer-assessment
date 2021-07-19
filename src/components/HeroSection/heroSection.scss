@@ -107,6 +107,7 @@ body{
                 -2em 1em 2em 3em rgba(50, 210, 250);
   }
 }
+
 .hero-section-title{
   position:absolute;
   text-align:center;
@@ -260,9 +261,8 @@ body{
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  border-radius: 100%;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 60%;
+  border-radius: 0px 0px 250px 0px;
+
   
   background: linear-gradient(to right,aqua, green);
   
@@ -282,4 +282,13 @@ body{
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+.logo{
+  color:white;
+  font-size: 2em;
+  position: absolute;
+  left: 80px;
+  top: -9px;
+  z-index: 3;
 }
