@@ -24,8 +24,6 @@ export default function App() {
             <Yellow />
             <Perks />
             <Reviews />
-          </Route>
-          <Route exact path="/get-exp-con">
             <GetExpCon />
           </Route>
           <Route exact path="/pricing">
