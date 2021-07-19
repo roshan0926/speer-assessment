@@ -1,0 +1,269 @@
+$perks-primary: #191919;
+
+.perks-page{
+  background-color:$perks-primary;
+  height: 90vh;
+  z-index: 10;
+}
+
+.hamburger-perks {
+  position: absolute;
+  top: 273.8vh;
+  left: 20px;
+}
+
+#menuToggle-perks {
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  
+  z-index: 11;
+  
+  -webkit-user-select: none;
+  user-select: none;
+  a {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+    &:hover{
+  color: $perks-primary;
+    }
+  }
+  input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 12; /* ensure it is on the top*/
+  
+  -webkit-touch-callout: none;
+  }
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 100%;
+    
+    background: white;
+    border-radius: 3px;
+    
+    z-index: 11;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    &:first-child {
+      transform-origin: 0% 0%;
+    }
+    &:nth-last-child(2){
+  transform-origin: 0% 100%;
+
+    }
+  }
+}
+
+/*transform the hamburger into a cross*/
+#menuToggle-perks input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*cause one of the slices to be hidden*/
+#menuToggle-perks input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*one line should face the other way*/
+#menuToggle-perks input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu-perks
+{
+  position: absolute;
+  width: 250px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  border-radius: 0px 0px 250px 0px;
+  
+  background: linear-gradient(to right,aqua, green);
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+}
+
+
+/* menu slide in from left*/
+#menuToggle-perks input:checked ~ ul
+{
+  transform: none;
+}
+
+.logo-perks{
+  color:white;
+  font-size: 2em;
+  position: absolute;
+  left: 80px;
+  top: -9px;
+  z-index: 12;
+}
+
+.try-it-perks {
+  border: 3px solid white;
+  outline:0;
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 4px;
+  overflow: hidden;
+  position: absolute;
+  padding: 2em 3em;
+  margin: 4em;
+  left: 85vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 500ms ease-in-out;
+  &::after, &::before { 
+    content: "";
+    position: absolute;
+  }
+  &:hover, &:focus {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  &::after {
+    background: transparent;
+    border-radius: 120px;
+    content: attr(data-text);;
+    color: #222;
+    padding: 1.6em 2.5em;
+    top: 0.4em;
+    left: 0.5em;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  &::before {
+    background: transparent;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 1em 2em 3em rgba(255, 50, 0),
+                4em 0em 2em 2em rgba(155, 50, 0),
+                -4em -2em 2em 2em rgba(255, 0, 150),
+                -4em 2em 2em 4em rgba(0, 0, 150),
+                0 -3em 2em 3em rgba(120, 250, 0),
+                2em -1em 2em 2em rgba(50, 10, 200);
+    width: 0;
+    height: 0;
+    animation: mix 5s linear infinite;
+  }
+}
+@keyframes mix {
+  
+  30% {
+    box-shadow: 0 -1em 2em 3em rgba(255, 0, 200),
+                4em -1em 2em 3em rgba(255, 50, 0),
+                -4em 2em 3em 2em rgba(155, 200, 0),
+                -4em -2em 2em 2em rgba(200, 0, 150),
+                0 3em 2em 2em rgba(20, 250, 0),
+                2em 1em 2em 2em rgba(50, 10, 250);
+  }
+  
+  60% {
+    box-shadow: 2em 1em 2em 3em rgba(55, 0, 200),
+                3em 1em 2em 3em rgba(25, 150, 0),
+                3em -2em 3em 3em rgba(155, 200, 0),
+                -4em 2em 2em 3em rgba(200, 0, 50),
+                0 -3em 2em 3em rgba(200, 250, 0),
+                -2em 1em 2em 3em rgba(50, 210, 250);
+  }
+}
+
+.perks-title {
+  color: white;
+  position: absolute;
+  left: 15vw;
+  padding-top: 20vh;
+  font-size: 6em;
+  letter-spacing: 8px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+
+}
+
+.line {
+  position: absolute;
+  margin-top: 45vh;
+  height: 4px;
+  width: 100px;
+}
+
+$red-perk: #d34848;
+$blue-perk: #21e1e9;
+$yellow-perk: #fbb13f;
+.one {
+  left: 15vw;
+  background-color: $red-perk;
+}
+
+.two {
+  left: 44vw;
+  background-color: $blue-perk;
+}
+
+.three {
+  left: 69vw;
+background-color: $yellow-perk;
+}
+
+.perk-subtitle{
+  position: absolute;
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  margin-top: 50vh;
+  width: 10vw;
+}
+#red {
+  color: $red-perk;
+  left: 15vw;
+}
+
+#blue{
+  color: $blue-perk;
+  left: 44vw;
+
+}
+
+#yellow{
+  color: $yellow-perk;
+  left: 69vw;
+
+}
