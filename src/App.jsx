@@ -23,8 +23,6 @@ export default function App() {
             <Red />
             <Yellow />
             <Perks />
-          </Route>
-          <Route exact path="/reviews">
             <Reviews />
           </Route>
           <Route exact path="/get-exp-con">
