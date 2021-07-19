@@ -20,14 +20,8 @@ export default function App() {
           </Route>
           <Route exact path="/hero-section">
             <HeroSection />
-          </Route>
-          <Route exact path="/red">
             <Red />
-          </Route>
-          <Route exact path="/yellow">
             <Yellow />
-          </Route>
-          <Route exact path="/perks">
             <Perks />
           </Route>
           <Route exact path="/reviews">
