@@ -8,10 +8,13 @@ export default function Perks() {
     <h1 className="perks-title">perks</h1>
     <span className="line one"></span>
     <h2 className="perk-subtitle" id="red">subscription payment model</h2>
+    <p className="description" id="desc-one">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
     <span className="line two"></span>
     <h2 className="perk-subtitle" id="blue">no fee cancelation policy</h2>
+    <p className="description" id="desc-two">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
     <span className="line three"></span>
     <h2 className="perk-subtitle" id="yellow">subscription payment model</h2>
+    <p className="description" id="desc-three">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
     <nav className="hamburger-perks" role="navigation">
           <p className="logo-perks">EXP|CON</p>
         <div id="menuToggle-perks">

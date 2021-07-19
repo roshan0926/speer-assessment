@@ -238,7 +238,7 @@ $yellow-perk: #fbb13f;
 }
 
 .three {
-  left: 69vw;
+  left: 73vw;
 background-color: $yellow-perk;
 }
 
@@ -259,11 +259,29 @@ background-color: $yellow-perk;
 #blue{
   color: $blue-perk;
   left: 44vw;
-
 }
 
 #yellow{
   color: $yellow-perk;
-  left: 69vw;
+  left: 73vw;
+}
 
+.description{
+  position: absolute;
+  color: white;
+  width: 16vw;
+  margin-top: 60vh;
+  font-size: 1.4em;
+  letter-spacing: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#desc-one {
+  left: 15vw;
+}
+#desc-two {
+  left: 44vw;
+}
+#desc-three {
+  left: 73vw;
 }
