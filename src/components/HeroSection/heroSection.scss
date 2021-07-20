@@ -4,6 +4,7 @@ body{
   margin: 0;
   padding: 0;
 }
+
 .page{
   width: 100%;
   overflow: hidden;
@@ -11,10 +12,13 @@ body{
   justify-content: center;
   align-items: center;
 }
+
 .photos{
   width:100vw;
   height:90vh;
 }
+
+//clickable dots for photo switching
 .circles{
   position: absolute;
   bottom: 10vh;
@@ -33,9 +37,12 @@ body{
     background-color:blanchedalmond;
   }
 }
+
 .highlighted{
   background-color:white;
 }
+
+//liquid gradient button
 .price-button{
   border: 3px solid white;
   outline:0;
@@ -116,6 +123,7 @@ body{
   top:30vh;
   margin:0 4em 0;
 }
+
 .hero-section-text{
   position:absolute;
   text-align:center;
@@ -157,8 +165,7 @@ body{
   left: 20px;
 }
 
-#menuToggle
-{
+#menuToggle {
   display: block;
   position: relative;
   top: 30px;
@@ -168,94 +175,79 @@ body{
   
   -webkit-user-select: none;
   user-select: none;
+
+  a {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+    &:hover {
+      color: tomato;
+    }
+  }
+  input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0;
+    z-index: 2; /* ensure it is on the top*/
+    
+    -webkit-touch-callout: none;
+  }
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 100%;
+  
+    background: white;
+    border-radius: 3px;
+  
+    z-index: 1;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    &:first-child {
+      transform-origin: 0% 0%;
+    }
+  }
 }
 
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0;
-  z-index: 2; /* ensure it is on the top*/
-  
-  -webkit-touch-callout: none;
-}
-
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  border-radius: 100%;
-  
-  background: white;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
 /*transform the hamburger into a cross*/
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
 /*cause one of the slices to be hidden*/
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 /*one line should face the other way*/
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
 
-#menu
-{
+#menu {
   position: absolute;
   width: 250px;
   margin: -100px 0 0 -50px;
@@ -270,21 +262,18 @@ body{
   transform: translate(-100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
+  li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
 }
 
 /* menu slide in from left*/
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
-.logo{
+.logo {
   color:white;
   font-size: 2em;
   position: absolute;

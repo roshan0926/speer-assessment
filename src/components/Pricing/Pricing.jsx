@@ -84,15 +84,15 @@ export default function Pricing() {
         <div alt="perks-text">
           <a className="try-it-perks-pricing" href="/pricing" data-text="Try it now">Try it now</a>
           <h1 className="perks-pricing-title">perks</h1>
-          <span className="line one"></span>
-          <h2 className="perk-subtitle" id="red">subscription payment model</h2>
-          <p className="description" id="desc-one">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
-          <span className="line two"></span>
-          <h2 className="perk-subtitle" id="blue">no fee cancelation policy</h2>
+          <span className="line-pricing one-pricing"></span>
+          <h2 className="perk-subtitle-pricing" id="red-pricing">subscription payment model</h2>
+          <p className="description" id="desc-one-pricing">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
+          <span className="line-pricing two-pricing"></span>
+          <h2 className="perk-subtitle-pricing" id="blue-pricing">no fee cancelation policy</h2>
           <p className="description" id="desc-two">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
-          <span className="line three"></span>
-          <h2 className="perk-subtitle" id="yellow">subscription payment model</h2>
-          <p className="description" id="desc-three">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
+          <span className="line-pricing three-pricing"></span>
+          <h2 className="perk-subtitle-pricing" id="yellow-pricing">subscription payment model</h2>
+          <p className="description-pricing" id="desc-three-pricing">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
         </div>
         <nav className="hamburger-perks-pricing" role="navigation">
           <p className="logo-perks-pricing">EXP│CON</p>

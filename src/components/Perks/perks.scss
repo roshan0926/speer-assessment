@@ -96,8 +96,7 @@ $perks-primary: #191919;
 }
 
 
-#menu-perks
-{
+#menu-perks {
   position: absolute;
   width: 250px;
   margin: -100px 0 0 -50px;
@@ -105,7 +104,7 @@ $perks-primary: #191919;
   padding-top: 125px;
   border-radius: 0px 0px 250px 0px;
   
-  background: linear-gradient(to right,aqua, green);
+  background: #21e1e9;
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -119,12 +118,11 @@ $perks-primary: #191919;
 
 
 /* menu slide in from left*/
-#menuToggle-perks input:checked ~ ul
-{
+#menuToggle-perks input:checked ~ ul {
   transform: none;
 }
 
-.logo-perks{
+.logo-perks {
   color:white;
   font-size: 2em;
   position: absolute;
@@ -242,7 +240,7 @@ $yellow-perk: #fbb13f;
 background-color: $yellow-perk;
 }
 
-.perk-subtitle{
+.perk-subtitle {
   position: absolute;
   font-size: 2em;
   letter-spacing: 5px;
@@ -256,17 +254,17 @@ background-color: $yellow-perk;
   left: 15vw;
 }
 
-#blue{
+#blue {
   color: $blue-perk;
   left: 44vw;
 }
 
-#yellow{
+#yellow {
   color: $yellow-perk;
   left: 73vw;
 }
 
-.description{
+.description {
   position: absolute;
   color: white;
   width: 16vw;

@@ -27,11 +27,9 @@ export default function Reviews() {
           <span></span>
           <span></span>
           <ul id="menu-reviews">
-            <a href="/home"><li>Home</li></a>
-            <a href="/reviews"><li>Red</li></a>
-            <a href="/perks"><li>Perks</li></a>
-            <a href="/reviews"><li>Reviews</li></a>
-            <a href="/yellow"><li>Yellow</li></a>
+            <a href="/hero-section"><li>What is it</li></a>
+            <a href="/hero-section#perks"><li>perks</li></a>
+            <a href="/pricing"><li>pricing</li></a>
           </ul>
         </div>
       </nav>

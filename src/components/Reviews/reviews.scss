@@ -23,7 +23,7 @@ $reviews-primary: #21e1e9;
   user-select: none;
   a {
     text-decoration: none;
-    color: #232323;
+    color: white;
     
     transition: color 0.3s ease;
     &:hover{
@@ -78,7 +78,7 @@ $reviews-primary: #21e1e9;
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: $reviews-primary;
 }
 
 /*cause one of the slices to be hidden*/
@@ -104,7 +104,7 @@ $reviews-primary: #21e1e9;
   padding-top: 125px;
   border-radius: 0px 0px 250px 0px;
   
-  background: linear-gradient(to right,aqua, green);
+  background: black;
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);

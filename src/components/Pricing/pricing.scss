@@ -9,7 +9,7 @@ $pricing-primary: #191919;
   height: 180vh;
 }
 
-.perks-section{
+.perks-section {
   background-color:$perks-pricing-primary;
   height: 90vh;
   z-index: 10;
@@ -72,7 +72,7 @@ $pricing-primary: #191919;
   font-weight: bolder;
 }
 
-#pricing-yellow{
+#pricing-yellow {
   position: absolute;
   color: $yellow;
   top: 68vh;
@@ -233,10 +233,6 @@ $pricing-primary: #191919;
   background: linear-gradient(to right, blue, aqua);
  } 
 }
-
-
-
-
 
 //hamburger menu secition
 .hamburger-perks-pricing {
@@ -452,29 +448,29 @@ $pricing-primary: #191919;
 
 }
 
-.line {
+.line-pricing {
   position: absolute;
   margin-top: 45vh;
   height: 4px;
   width: 100px;
 }
 
-.one {
+.one-pricing {
   left: 15vw;
   background-color: white;
 }
 
-.two {
+.two-pricing {
   left: 44vw;
   background-color: white;
 }
 
-.three {
+.three-pricing {
   left: 73vw;
 background-color: white;
 }
 
-.perk-subtitle{
+.perk-subtitle-pricing{
   position: absolute;
   font-size: 2em;
   letter-spacing: 5px;
@@ -483,22 +479,22 @@ background-color: white;
   margin-top: 50vh;
   width: 10vw;
 }
-#red {
+#red-pricing {
   color: white;
   left: 15vw;
 }
 
-#blue{
+#blue-pricing{
   color: white;
   left: 44vw;
 }
 
-#yellow{
+#yellow-pricing {
   color: white;
   left: 73vw;
 }
 
-.description{
+.description-pricing{
   position: absolute;
   color: white;
   width: 16vw;
@@ -508,12 +504,12 @@ background-color: white;
   font-family: 'Roboto', sans-serif;
 }
 
-#desc-one {
+#desc-one-pricing {
   left: 15vw;
 }
-#desc-two {
+#desc-two-pricing {
   left: 44vw;
 }
-#desc-three {
+#desc-three-pricing {
   left: 73vw;
 }
