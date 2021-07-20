@@ -70,11 +70,9 @@ export default function Pricing() {
             <span></span>
             <span></span>
             <ul id="menu-perks-pricing">
-              <a href="/home"><li>Home</li></a>
-              <a href="/perks-pricing"><li>Red</li></a>
-              <a href="/perks-pricing"><li>Perks</li></a>
-              <a href="/reviews"><li>Reviews</li></a>
-              <a href="/yellow"><li>Yellow</li></a>
+              <a href="/hero-section"><li>What is it</li></a>
+              <a href="/hero-section#perks"><li>perks</li></a>
+              <a href="/pricing"><li>pricing</li></a>
             </ul>
           </div>
         </nav>
@@ -102,11 +100,9 @@ export default function Pricing() {
             <span></span>
             <span></span>
             <ul id="menu-perks-pricing">
-              <a href="/home"><li>Home</li></a>
-              <a href="/perks-pricing"><li>Red</li></a>
-              <a href="/perks-pricing"><li>Perks</li></a>
-              <a href="/reviews"><li>Reviews</li></a>
-              <a href="/yellow"><li>Yellow</li></a>
+              <a href="/hero-section"><li>What is it</li></a>
+              <a href="/hero-section#perks"><li>perks</li></a>
+              <a href="/pricing"><li>pricing</li></a>
             </ul>
           </div>
         </nav>
