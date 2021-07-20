@@ -24,8 +24,8 @@ export default function Perks() {
           <span></span>
           <ul id="menu-perks">
             <a href="/hero-section"><li>What is it</li></a>
-            <a href="/hero-section#perks"><li>perks</li></a>
-            <a href="/pricing"><li>pricing</li></a>
+            <a href="/hero-section#perks"><li>Perks</li></a>
+            <a href="/pricing"><li>Pricing</li></a>
           </ul>
         </div>
       </nav>

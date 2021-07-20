@@ -71,8 +71,8 @@ export default function Pricing() {
             <span></span>
             <ul id="menu-perks-pricing">
               <a href="/hero-section"><li>What is it</li></a>
-              <a href="/hero-section#perks"><li>perks</li></a>
-              <a href="/pricing"><li>pricing</li></a>
+              <a href="/hero-section#perks"><li>Perks</li></a>
+              <a href="/pricing"><li>Pricing</li></a>
             </ul>
           </div>
         </nav>
@@ -101,8 +101,8 @@ export default function Pricing() {
             <span></span>
             <ul id="menu-perks-pricing">
               <a href="/hero-section"><li>What is it</li></a>
-              <a href="/hero-section#perks"><li>perks</li></a>
-              <a href="/pricing"><li>pricing</li></a>
+              <a href="/hero-section#perks"><li>Perks</li></a>
+              <a href="/pricing"><li>Pricing</li></a>
             </ul>
           </div>
         </nav>
